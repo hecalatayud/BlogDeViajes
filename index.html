@@ -6,18 +6,25 @@
     <title>Blog de viajes</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/9cd88678f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="site-header container">
         <img src="/img/logo.png" alt="Logo">
     </header> 
     <div class="bar">
-        <nav class="main-nav container">
+        <a href="#nav" class="mobile-menu">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+        <nav id="nav" class="main-nav container">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
+            <a href="#" class="close">
+                <i class="fas fa-times"></i>
+            </a>
         </nav>
     </div>
     <div class="container clearfix">

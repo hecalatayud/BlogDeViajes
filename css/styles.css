@@ -54,6 +54,37 @@ p {
 
 .bar {
     background-color: #db008d;
+    overflow: hidden;
+}
+
+.mobile-menu {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu,
+    .close {
+        display: none!important;
+    }   
+}
+
+#nav:target {
+    max-height: 800px;
+}
+
+.main-nav {
+    max-height: 0;
+    transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+    .main-nav {
+        max-height: unset;
+    }
 }
 
 .main-nav a {
